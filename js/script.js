@@ -30,7 +30,7 @@ for(let pro of products) {
         if(filename !== "sproduct.html"){
             localStorage.setItem("img", imgSrc);
             localStorage.setItem("amt", amount);
-            if(window.location.pathname.substring(url.lastIndexOf('/') + 1) == "index.html") {
+            if(window.location.pathname.substring(url.lastIndexOf('/') + 1) == "index.html" || location == "") {
                 window.location.href="pages/sproduct.html";
             } else {
                 window.location.href = "sproduct.html";
