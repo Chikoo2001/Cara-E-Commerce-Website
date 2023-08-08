@@ -1,0 +1,182 @@
+#page-header {
+    background: url(../img/about/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#cart {
+    overflow-x: auto;
+}
+
+#cart table{
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table thead {
+    border: 1px solid #e2e9e1;
+    border-right: none;
+    border-left: none;
+}
+
+#cart table th {
+    text-transform: uppercase;
+    font-size: 13px;
+    padding-block: 15px;
+}
+
+#cart table td {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+#cart table td:nth-child(1) {
+    width: 100px;
+}
+
+#cart table td:nth-child(2) {
+    width: 150px;
+}
+
+#cart table td:nth-child(3) {
+    width: 250px;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    width: 150px;
+}
+
+#cart table td:nth-child(1) button {
+    border: none;
+    outline: none;
+}
+
+#cart table td:nth-child(1) i{
+    font-size: 20px;
+    color: black;
+    pointer-events: none;
+}
+
+#cart table img {
+    width: 70px;
+}
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart-amount {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-amount #coupon {
+    width: 55%;
+    padding: 20px;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#cart-amount #coupon div:nth-child(2) {
+    width: 100%;
+}
+
+#cart-amount #coupon input {
+    width: 50%;
+    max-width: 400px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #e2e9e1;
+    margin-right: 10px;
+    margin-block: 10px;
+}
+
+#cart-amount #coupon button {
+    width: 20%;
+    min-width: 100px;
+    /* height: 100%; */
+    border: none;
+    padding: 10px;
+    background-color: #088178;
+    color: white;
+    border-radius: 5px;
+}
+
+#cart-amount #bill {
+    width: 43%;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+#cart-amount #bill table {
+    margin-block: 10px;
+    border: 1px solid #e2e9e1;
+    border-collapse: collapse;
+}
+
+#cart-amount #bill table td {
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#blank td {
+    /* font-size: 32px; */
+    font-weight: 700;
+}
+
+.empty-cart {
+    display: none;
+}
+
+#cart-amount #bill button {
+    width: 50%;
+    min-width: 200px;
+    padding: 15px 5px;
+    white-space: nowrap;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #088178;
+    color: #fff;
+}
+
+.deleteBtn {
+    cursor: pointer;
+}
+
+@media (max-width: 890px) {
+    #cart-amount {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #cart-amount #coupon {
+        width: 100%;
+    }
+
+    #cart-amount #bill {
+        width: 100%;
+    }
+
+    #cart-amount #coupon input {
+        width: 100%;
+    }
+}
+
+/* @media (max-width: 405px) {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+} */
