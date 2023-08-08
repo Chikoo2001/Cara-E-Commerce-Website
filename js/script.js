@@ -49,6 +49,8 @@ for(let pro of products) {
     })
 }
 
+console.log("" == window.location.pathname.substring(url.lastIndexOf('/') + 1));
+
 
 
 
